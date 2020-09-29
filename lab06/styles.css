@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+}
+h1,h2 {color:#07689f}
+.evenrow{background-color: aliceblue;}
+table, th, td {
+  border: 1px solid #B1B1B1;
+	border-collapse: collapse;
+}
+h1 {font-face: 3.5em}
+h2 {font-face: 2.7em}
