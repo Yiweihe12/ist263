@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* CSS Document */
+nav{
+	background-color:#F1E0C5;
+}
+nav a 
+{color:#71816D;
+}
+nav a:hover {
+	background-color:#C9B79C;
+}
+nav{margin-bottom:30px;
+	padding:10px;}
+
+h1,h2{color:#343E3D;}
+p,form,table,th,td,textarea,input,ul,label,option{color:#46494C;}
+
+a:link {color:#71816D;}
