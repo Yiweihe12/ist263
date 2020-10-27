@@ -138,7 +138,7 @@ fieldset{
 }
 legend{
 	font-size: 1em;
-	margin: 0px 0px 20px;
+	padding: 0px;
 }
 .bioimg {
 	max-width:100%;
