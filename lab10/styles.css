@@ -133,7 +133,9 @@ div.clear{clear:both;}
 	color: #515c4e;
 	padding:15px;
 } 
-
+fieldset{
+	border:0;
+}
 .bioimg {
 	max-width:100%;
 }
