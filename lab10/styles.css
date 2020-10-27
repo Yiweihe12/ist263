@@ -136,6 +136,10 @@ div.clear{clear:both;}
 fieldset{
 	border:0;
 }
+legend{
+	font-size: 1.5em;
+	margin: 0px 0px 20px;
+}
 .bioimg {
 	max-width:100%;
 }
