@@ -1,8 +1,190 @@
 @charset "UTF-8";
 /* CSS Document */
 
-body {font-family: Arial, Helvetica, sans-serif;}
+
+nav{
+	font-family:Lucida Grande;
+	font-size: 1em;
+	width: 100%;
+	height: 100%;
+	float:left;
+	background-color:none;
+	text-align: left;
+	margin: -20px 50px 5px 5px;
+
+}
+
+
+#skip-to-content{
+	text-transform: uppercase;
+    float:left;
+	position:absolute; 
+	left:-999px;
+	background-color:#F0F7F4;
+
+}
+
+
+nav ul li {
+	float: left;
+	color: #807A88;
+	margin: 20px;
+	text-align: left;
+	padding-top: 0px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	transition: all 0.3s linear;
+}
+
+ul li a {
+	color: #807A88;
+	text-decoration: none;
+}
+ul li:hover a {
+	color: #DD9787;
+}
+
+.ctsection{
+	font-family: Khmer MN;
+	color:#75869A;
+	
+}
+.contactpic{
+	max-width:100%;
+	float:left;
+	margin:15px 40px 100px 20px;
+}
+	
+.container1 h1 p a{
+  	text-align: center;
+/*	float:right;*/
+/*	align-content: center;*/
+	margin: 30px 50px 30px 50px;
+	padding: 0px;
+/*	vertical-align: middle;*/
+	
+}
+.container1 p{
+/*	align: center;*/
+	font-size: 1.2em;
+	
+}
+.textcenter {
+	text-align: center;
+	align-content: center;
+	margin: 30px 20px 20px 20px;
+}
+
+
+
+/*
+.ctsection{
+	display:flex;
+	clear:both;
+	justify-content: center;
+	align-content:center;
+	padding:0px 0px 0px 10px;
+	
+}
+*/
+/*
+.container{
+	flex:2;
+	order:2;
+	flex-wrap:wrap;
+	font-family: Khmer MN;
+	color:#75869A;
+	align:center;
+	justify-content: center;
+}
+*/
+/*	dispaly: inline-block;*/	
+/*	vertical-align: middle;                      */
+
+
+/*
+.contactpic{
+	width: 100%;
+	height: auto;
+	flex:1;
+	order:1;
+	padding:30px;
+	margin: 10px;
+	flex-shrink: 0;
+}
+*/
+
+#Contact_Us{
+  font-family: Khmer MN;
+/*  background-color: transparent; */
+  color: #75869A;
+  font-size: 1.8em;
+  text-align: center;
+  border: thin;
+  border-radius: 1em;
+  display: inline-block;
+  
+}
+	
+body {font-family: Arial, Helvetica, sans-serif;	
+}
+
 * {box-sizing: border-box;}
+
+#ctbody{
+ 	background:url("Site_media/Photos/mainphoto/backgroud.png");
+	background-size: cover;
+}
+
+/*----------------------------contacts form below-------------------------------------*/
+
+#bg {
+	clear:both;
+	background-image: url("Site_media/Photos/ctimage01.jpg");
+	margin: 0px 20px 0px 20px;
+	
+}
+.contactheader {
+	color:white;
+	font-size: 6em;
+	font-family: Skia,"Skia Bold";
+	
+}
+.colorchanges{
+	font-family:Skia, "Skia Bold"; 
+	color:white;
+	font-size: 6em;
+	Float:right;
+	font-weight: bold;
+	margin:-180px 0px -1000px 0px;
+}
+.clear2{
+	clear:both;
+}
+.container{
+	 font-family:Khmer MN; 
+	 font-size: 1.2em;
+	 border-radius: 0.5em;
+     padding: 0px 50px 0px 50px;
+	color: #646069;
+}
+
+
+
+	
+
+.submitbt{
+	font-family:Khmer MN; 
+	font-weight: bold;
+	border-radius: 4px;
+  	display: table;
+  	clear: both;
+}
+#time{
+	background-color:transparent;
+	color:#646069;
+	
+}
 
 input[type=text], select, textarea {
   width: 100%;
@@ -13,35 +195,250 @@ input[type=text], select, textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
+  background-color:transparent;
+	font-family:Khmer MN; 
+  color: #646069;
+  font-size: 1.1em;
+	font-weight: bold;
+  padding: 10px 0px -40px 0px;
+  border-color: #646069;
   border-radius: 4px;
   cursor: pointer;
+	text-transform: uppercase;
+	
+	
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+    background-color:transparent;
+	color: white;
 }
 
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+input{
+	wifth:100px;
+}
+input
+{
+    background: transparent;
+    border: none;
+}
+
+textarea{
+    background: transparent;
+    border: none;
+	display: block;
+	font-family: Lucida Grande;
+	font-size: 0.8em;
+
+}
+#fname{
+	font-family: Lucida Grande;
+	font-size: 0.8em;
+}
+#email{
+	font-family: Lucida Grande;
+	font-size: 0.8em;
+}
+#time{
+	font-family: Lucida Grande;
+	font-size: 0.8em;
+}
+.clear2{
+	font-family: Khmer MN; 
+	text-align: center;
+	color: #646069;
+	font-size: 1.2em;
+	padding:10px 0px  0px 0px;
+}
+.clear2 a:link{
+	color: #646069;
+	 cursor: pointer;
+  background-color: transparent;
+  text-decoration: none;
+	
+}
+.clear2 a:hover {
+  color: #E4BB97;
+  background-color: transparent;
 }
 
 footer {
+font-family: Khmer MN; 
   text-align: center;
-  padding: 3px;
-  background-color:#E3D8F1;
-	color: white;}
-
+	color: white;
+	text-decoration: none;
+	background-color: #FEF5EF;
+	margin: 20px;
+	
+}
+.footerheader a:link{
+	margin: -20px;
+	color: #646069;
+	 cursor: pointer;
+  background-color: transparent;
+  text-decoration: none;
+}
+.footerheader a:hover{
+	color: #E4BB97;
+  background-color: transparent;
+}
+.emailme {
+	font-family: Khmer MN; 
+  text-align: center;
+	color: white;
+	text-decoration: none;
+}
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
+.emailme a{
+	color:#646069;
+}
+.copyright{
+	text-align: center;
+	font-family: Khmer MN; 
+	background-color: #FEF5EF;
+	color:#646069;
+	margin: -20px 20px 0px 20px;
+}
+
+label span { color: white; }
+
+.container2 .homepic{
+  text-align: center;
+  color: white;
+}
+
+.top-left{
+margin-left: 20px;
+	color:#646069;
+	font-family:Lucida Grande; 
+	font-weight: bold;
+	font-size: 0.8em;
+	
+}
+.together{
+	position: relative;
+}
+.homepic{
+	display: block;
+	width: 80%;
+    height: auto;
+	align-content: center;
+	margin-left: auto;
+  margin-right: auto;
+/*	margin: 0px 20px 20px 23px;*/
+}
+
+.homeheader{
+    margin: -55px 0px 0px 70px;
+	position: absolute;
+	color: white;
+	font-size: 8vw;
+	font-family:Big Caslon;
+	letter-spacing: 2px;
+}
+	
+.lightcolor{
+	margin:-5px 0px 50px 30px;
+	position: absolute;
+	color: #646069;
+	font-size: 8vw;
+	font-family:Big Caslon;
+	letter-spacing: 2px;
+	
+}
+
+
+
+/*small tablet02*/
+@media only screen and (min-width:730px) {
+	
+	.together{
+		width:100%;
+		position: inherit;
+}
+	
+
+}
+/*small tablet01*/
+/*@media only screen and (max-width:914px) {*/
+/*
+	.homepic{
+		width:90%;
+		display: block;
+  margin-left: auto;
+  margin-right: auto;
+	
+	}
+	.F{
+		display:None;
+	}
+	
+}
+*/
+
+/*
+@media only screen and (min-width: 915px) {
+	.homepic{
+		width:70%;
+		height: auto;
+		align-items: center;
+		display: block;
+  margin-left: auto;
+  margin-right: auto;
+	}
+	.homeheader{
+	margin:100px;
+	color: white;
+	font-size: 8vw;
+	font-family:Big Caslon;
+	letter-spacing: 2px;
+}
+	
+}
+*/
+
+
+.welcome{
+	margin: 25px;
+	font-family:Lucida Grande; 
+	font-size: 0.8em;
+	color: #646069;
+	clear: both;
+	margin-top: 55px;
+}
+.intro{
+	margin: 20px;
+	font-family: Khmer MN;
+	color:#39373C;
+	clear: both;
+}
+.intro h2{
+	font-size: 2em;
+	margin-bottom: -5px;
+
+}
+.features{
+	font-family: Khmer MN;
+	color:#39373C;
+	margin: 20px;
+}
+.featureHead{
+	font-size: 1.8em;
+}
+
+/*View-------------*/
+
+#vwbody{ font-family: Khmer MN;
+  color: #75869A;
+	
+}
+ 

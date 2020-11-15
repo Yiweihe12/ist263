@@ -61,6 +61,7 @@ body {background-color:#d9e4dd;}
 .h1p{margin:0.5em;}
 main {margin:0.5em;}
 div.clear{clear:both;}
+
 .container{
 	display: flex;
 	flex-wrap:wrap;

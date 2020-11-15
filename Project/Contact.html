@@ -1,13 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact</title>
 <link rel="stylesheet" href="stylesheet.css">
 </head>
 	
-<body>
+<body id="ctbody">
 	<nav class="secondary_header" id="menu">
 	  <a id="skip-to-content" href="#content">Skip to Content</a>
       <ul>
@@ -17,68 +18,109 @@
       </ul>
     </nav>
 	
-	<section>
-	<h1>GET IN TOUCH WITH US TODAY</h1>
-<!--	<a href="#Contact">Contact US</a>-->
-	<p>Please let us know if you have any question about the housing! Great choice with us, it always a wise choice to start a visit by having an appointment with us, click the availability for your next step.</p>
-<!--	 <a id="Contact">Contact US</a>-->
-	<img src="Site_media/Photos/Contact.png" class="contactpic" alt="contactpicture">
-	</section>
+<section class="ctsection">
 	
-	<section>
+		<div class="container1">
+			
+			<img src="Site_media/Photos/mainphoto/Contact.png" class="contactpic" alt="contactpicture">
+			
+			<div class="textcenter">
+			<h1><br><br><br>GET IN TOUCH WITH US TODAY</h1>
+			
+			<p class="ctext">Please let us know if you have any question about the housing!
+		  Great choice with us, it always a wise choice to start a visit by having an appointment with us, click the availability for your next step.</p>
+			<!--	<a id="Contact">Contact US</a>-->
+
+			<a id="Contact_Us" href="#content">CONTACT US</a>
+			</div>
+<!--
+			<button>
+				
+			<a href="#Contact" class="ctbutton">Contact US</a>
+				</button>
+-->
+  		</div>
 	
 	
-	<h1 class="contactheader">CONTACT<br><span class="colorchanges">US</span></h1>
-	<a id="content"></a>
-	<div class="container">
+			
+</section>
+	
+	
+	<section id="bg">
+	
+		<div id="contactinfo">
+			<a id="content"></a>
+			<h1 class="contactheader">CONTACT</h1>
+		</div>
 		
-  <form action="/action_page.php">
-    <label for="fname">Your Full Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+			<div class="container">
 
-    <label for="email">Your Email</label>
-    <input type="text" id="email" name="email" placeholder="Your Email..">
+			  <form action="/action_page.php">
+				 
+					<label for="fname">Your Full Name</label>
+					
+				  
+					<input type="text" id="fname" name="firstname" placeholder="Your name..">
+				
+				  <div class="emailtext">
+						<label for="email">Your Email</label>
+					  </div>
+					
+					<input type="text" id="email" name="email" placeholder="Your Email..">
+					
+			<div class="message">
+					<label for="mesg">Your Messages</label>
+				</div>
+					<textarea id="mesg" name="mesg" placeholder="Write something.." style="height:200px"></textarea>
 
-    <label for="mesg">Your Messages</label>
-    <textarea id="mesg" name="mesg" placeholder="Write something.." style="height:200px"></textarea>
+					<label for="time">Idea Schedule Time</label>
 
-	<label for="time">Idea Schedule Time</label>
+					<select id="time">
+						<option value="asap">ASAP</option>
+						<option value="october">October</option>
+						<option value="november">November</option>
+						<option value="december">December</option>
+						<option value="undecided">Undecided</option>
+					</select>
 
-	<select id="time">
-		<option value="asap">ASAP</option>
-		<option value="october">October</option>
-		<option value="november">November</option>
-		<option value="december">December</option>
-		<option value="undecided">Undecided</option>
-	</select>
-	  
-	  <p>DO YOU WANT TO RECEIVE NOTIFICATIONS FOR RECENT ACTIVITIES?</p>
-	  <br>
-	  <input type="radio" id="yes" name="yesno" value="yes">
-	  <label for="yes">Yes</label><br>
-	  
-	  <input type="radio" id="no" name="yesno" value="no">
-	  <label for="no">No</label><br>
-	  <br>
-	  
-	  <p>DO YOU WISH TO HAVE A TOUR FOR THE HOUSE?</p>
-	  <br>
-	  <input type="radio" id="yep" name="yn" value="yep">
-	  <label for="yep">Yes</label><br>
-	  <input type="radio" id="nope" name="yn" value="nope">
-	  <label for="nope">No</label><br>
-	  
-	<br>
-	<input type="submit" value="Submit">
-  </form>
-</div>
+					  <p>DO YOU WANT TO RECEIVE NOTIFICATIONS FOR RECENT ACTIVITIES?</p>
+					  <br>
+					  <input type="radio" id="yes" name="yesno" value="yes">
+					  <label for="yes">Yes</label><br>
+
+					  <input type="radio" id="no" name="yesno" value="no">
+					  <label for="no">No</label><br>
+					  <br>
+
+					  <p>DO YOU WISH TO HAVE A TOUR FOR THE HOUSE?</p>
+					  <br>
+					  <input type="radio" id="yep" name="yn" value="yep">
+					  <label for="yep">Yes</label><br>
+					  <input type="radio" id="nope" name="yn" value="nope">
+					  <label for="nope">No</label><br>
+
+						<br>
+				  		 	<div class="submitbt">
+									<input type="submit" value="Submit">
+				  			</div>
+
+				</form>
+			</div>
+					<div class="colorchanges">
+						<p>US</p>
+					</div>
+			
 	</section>
-	<h3><a href="View.html">Wanna go back?</a></h3>
+	
 	
 <footer>
+	<div class="clear2">
+	<a href="View.html">Wanna go back?</a>
+	</div>
 	<p class="footerheader"><a href="Contact.html">FOR MORE IDEAS &amp; NEWS</a></p>
-	<p>Created by: Yiwei He<br>
-  	<a href="mailto:yhe170@syr.edu">yhe170@syr.edu</a></p>
+	<div class="emailme">
+  	<a href="mailto:yhe170@syr.edu">yhe170@syr.edu</a>
+	</div>
 </footer>
 	  <!-- Copyrights Section -->
 	<div class="copyright">&copy;   2020  Yiwei He</div>
