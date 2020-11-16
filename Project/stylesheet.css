@@ -321,11 +321,12 @@ margin-left: 20px;
 	color:#646069;
 	font-family:Lucida Grande; 
 	font-weight: bold;
-	font-size: 0.8em;
+	font-size: 1em;
 	
 }
 .together{
 	position: relative;
+	margin-bottom: 0.1em;
 }
 .homepic{
 	display: block;
@@ -333,41 +334,53 @@ margin-left: 20px;
     height: auto;
 	align-content: center;
 	margin-left: auto;
-  margin-right: auto;
+  	margin-right: auto;
 /*	margin: 0px 20px 20px 23px;*/
 }
 
 .homeheader{
-    margin: -55px 0px 0px 70px;
+	/* margin: -55px 0px 0px 70px; */
 	position: absolute;
+	left: 1.3em;
+	bottom: -2.1em;
 	color: white;
 	font-size: 8vw;
 	font-family:Big Caslon;
-	letter-spacing: 2px;
+	letter-spacing: 5px;
 }
 	
 .lightcolor{
-	margin:-5px 0px 50px 30px;
-	position: absolute;
+	/* margin:-5px 0px 50px 30px; */
+	/* position: absolute; */
 	color: #646069;
 	font-size: 8vw;
 	font-family:Big Caslon;
-	letter-spacing: 2px;
+	letter-spacing: 5px;
 	
 }
 
+@media only screen and (min-width:1000px) {
 
+	.together {
+		margin-bottom: 5.5em;
+	}
+/*
+	.container2 {
+		margin-bottom: 1em;
+	}
+*/
+}
 
 /*small tablet02*/
-@media only screen and (min-width:730px) {
+/* @media only screen and (min-width:730px) {
 	
 	.together{
 		width:100%;
-		position: inherit;
+		position: relative;
 }
-	
+	 */
 
-}
+
 /*small tablet01*/
 /*@media only screen and (max-width:914px) {*/
 /*
@@ -413,7 +426,7 @@ margin-left: 20px;
 	font-size: 0.8em;
 	color: #646069;
 	clear: both;
-	margin-top: 55px;
+	margin-top: 5em;
 }
 .intro{
 	margin: 20px;
@@ -441,4 +454,118 @@ margin-left: 20px;
   color: #75869A;
 	
 }
- 
+.ct1, .ct2, .ct3, .ct4{
+	position:relative;
+	justify-content: space-between;
+	align-items: center;
+	display: inline-flex;
+    vertical-align: top;
+	margin:2em;
+	margin-bottom: 0em;
+/*	background: yellow;*/
+	flex-direction: row;
+}
+.homepic2 ,.homepic3 ,.homepic4, .homepic5, .homepic6, .homepic7, .planske{
+	width: 100%;
+  	height: auto;
+/*	margin: 5px 25px 10px 20px;*/
+/*    width : auto;*/
+    flex: 1;
+	
+}
+
+	
+.interctR{
+	font-family: Khmer MN;
+  color: #75869A;
+	flex:1;
+	
+	
+	
+/*	background: #809999;*/
+	
+}
+.intro, .exintro{
+	margin: 10px 0px;
+	color:#646069;
+}
+
+h1.viewhead{
+	font-size: 2em;
+	align-items: center;
+	letter-spacing: 4px;
+	line-height:1em;
+}
+
+.viewhead1, .viewhead2, .viewhead3, .viewhead{
+	font-size: 2em;
+	margin-top: 0.5em;
+	margin-bottom: 10px;
+	
+}
+
+div.intro{
+	margin-right: 50px;
+
+}
+@media screen and  (max-width: 768px){
+	.ct1, .ct2, .ct3, .ct4{
+		flex-direction: column;
+	}
+	
+	.image01, .image02{
+		width: 100%;
+  		height: auto;
+		
+	
+		
+}
+	.planske{
+		
+	}
+		
+}
+@media screen and  (min-width: 768px){
+	.ct1, .ct2, .ct3, .ct4{
+		margin-bottom: 5px;
+	}
+	.image01, .image02{
+		flex-direction:row;
+	max-width: 50%;
+	}
+	.homepic7, .planske{
+		height: auto;
+		max-width: 100%;
+		position:relative;
+		margin-left: auto;
+  		margin-right: auto;
+		
+		
+	}
+/*
+	.planske{
+		width: 80%;
+	}
+	*/.viewhead3{
+		text-align: center;
+		margin-top: 1em;
+	}
+	.ct4{
+		align-items:center;
+		display: block;
+	width: 80%;
+    height: auto;
+	margin-left: auto;
+  	margin-right: auto;
+	}
+	
+		
+/*
+	.ct1 h2, .ct2 h2 {
+		
+	}
+	
+*/
+		
+}
+
