@@ -27,7 +27,7 @@ nav{
 
 nav ul li {
 	float: left;
-	color: #807A88;
+	color: #2B3532;
 	margin: 20px;
 	text-align: left;
 	padding-top: 0px;
@@ -37,11 +37,11 @@ nav ul li {
 }
 
 ul li a {
-	color: #807A88;
+	color: #2B3532;
 	text-decoration: none;
 }
 ul li:hover a {
-	color: #00171F;
+	color: #7C899C;
 }
 
 .ctsection{
