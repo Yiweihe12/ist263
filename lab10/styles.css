@@ -18,7 +18,10 @@
 }
 
 
-	
+main h1, h2, h3{
+	font-family:'Ubuntu', sans-serif;
+}	
+
 body {
   font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
 }
