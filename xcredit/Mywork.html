@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="styles.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<style>
 		body {
             color:#515c4e;
@@ -27,7 +28,9 @@
      	margin-top: 20px;
 			width:60%;
 		}
-		
+		#landscape3, #landscape4{
+			width: 100px;
+		}
         #worktype {padding: 200px 200px 200px 350px;
 			vertical-align: middle;
 			flex: 2;
@@ -37,15 +40,15 @@
 			font-family: 'Ubuntu', sans-serif;
 
 		}
-        #thumbnails {width: 80%; margin: auto; padding-top: 30px; } 
+        #thumbnails {width: 140px; margin: auto; padding-top: 20px;} 
         /* ^^ margin auto is centering this container */
-      	#landscape1thumb, #landscape2thumb, #landscape3thumb, #landscape4thumb
-        {width:20%;}
+      	#landscape1thumb, #landscape2thumb, #landscape3thumb, #landscape4thumb, #leaves1thumb,#leaves2thumb, #leaves3thumb, #sky2thumb, 
+        {width:100px;}
 		
 		
-		#landscape1, #landscape2,#landscape3, #landscape3, #landscape4 {display:none;}
+		#landscape2,#landscape3, #landscape3, #landscape4, #leaves1,#leaves2,#leaves3, #sky2 {display:none;}
 
-		#landscape1info,#landscape2info,#landscape3info,#landscape4info {display:none;}
+		#landscape2info,#landscape3info,#landscape4info,#leaves1info,#leaves2info,#leaves3info,#sky2info {display:none;}
 		
 		#bigimages {float:left;}
 		.clear{clear:both;}
@@ -60,6 +63,14 @@
 			document.getElementById('landscape3').style.display= 'none';
 	
 			document.getElementById('landscape4').style.display= 'none';
+			
+			document.getElementById('leaves1').style.display= 'none';
+			
+			document.getElementById('leaves2').style.display= 'none';
+	
+			document.getElementById('leaves3').style.display= 'none';
+	
+			document.getElementById('sky2').style.display= 'none';
 	
 	
 			document.getElementById('landscape1info').style.display= 'none';
@@ -67,8 +78,18 @@
 			document.getElementById('landscape2info').style.display= 'none';
 	
 			document.getElementById('landscape3info').style.display= 'none';
-	
+			
 			document.getElementById('landscape4info').style.display= 'none';
+	
+			document.getElementById('leaves1info').style.display= 'none';
+			
+			document.getElementById('leaves2info').style.display= 'none';
+	
+			document.getElementById('leaves3info').style.display= 'none';
+	
+			document.getElementById('sky2info').style.display= 'none';
+	
+			
 	
 		}
            
@@ -88,7 +109,22 @@
 			document.getElementById('landscape4').style.display='block';
 			document.getElementById('landscape4info').style.display='block';
 		}
-
+  		function Image5On(){
+			document.getElementById('leaves1').style.display='block';
+			document.getElementById('leaves1info').style.display='block';
+		}
+		function Image6On(){
+			document.getElementById('leaves2').style.display='block';
+			document.getElementById('leaves2info').style.display='block';
+		}
+		function Image7On(){
+			document.getElementById('leaves3').style.display='block';
+			document.getElementById('leaves3info').style.display='block';
+		}
+		function Image8On(){
+			document.getElementById('sky2').style.display='block';
+			document.getElementById('sky2info').style.display='block';
+		}
        
     </script>
 </head>
@@ -112,25 +148,58 @@
         <img src="images/landscape2.png" alt="landscape2" id="landscape2">
         <img src="images/landscape3.png" alt="landscape3" id="landscape3">
         <img src="images/landscape4.png" alt="landscape4" id="landscape4">
+		<img src="images/leaves1.png" alt="leaves1" id="leaves1">
+        <img src="images/leaves2.png" alt="leaves2" id="leaves2">
+        <img src="images/leaves3.png" alt="leaves3" id="leaves3">
+		<img src="images/sky2.png" alt="sky2" id="sky2">
     </div>
     <div id="worktype"> 
 		<h1>Artwork Slideshow</h1>
+		
 	
         <div id="landscape1info">
             <h2>Photography</h2>
+			<p>Location: White Mountain <br>Date: October 18th, 2020</p>
+
         </div>
 		
         <div id="landscape2info">
             <h2>Photography</h2>
+			<p>Location: White Mountain <br>Date: October 18th, 2020</p>
         </div>
 		
         <div id="landscape3info">
 			<h2>Photography</h2>
+			<p>Location: White Mountain <br>Date: October 18th, 2020</p>
         </div>
 		
         <div id="landscape4info">
 			<h2>Photography</h2>
+			<p>Location: White Mountain <br>Date: October 18th, 2020</p>
         </div>
+		
+		<div id="leaves1info">
+            <h2>Photography</h2>
+			<p>Location: White Mountain <br>Date: October 18th, 2020</p>
+
+        </div>
+		
+        <div id="leaves2info">
+            <h2>Photography</h2>
+			<p>Location: White Mountain <br>Date: October 18th, 2020</p>
+        </div>
+		
+        <div id="leaves3info">
+			<h2>Photography</h2>
+			<p>Location: White Mountain <br>Date: October 18th, 2020</p>
+        </div>
+		
+		<div id="sky2info">
+			<h2>Photography</h2>
+			<p>Location: White Mountain <br>Date: October 18th, 2020</p>
+        </div>
+		
+		
 	</div>
 	</div>
 	
@@ -140,6 +209,11 @@
         <img src="images/landscape2.png" alt="landscape2" id="landscape2thumb" onclick="ImageOff(); Image2On();">
         <img src="images/landscape3.png" alt="landscape3" id="landscape3thumb" onclick="ImageOff(); Image3On();">
         <img src="images/landscape4.png" alt="landscape4" id="landscape4thumb" onclick="ImageOff(); Image4On();">
+		<img src="images/leaves1.png" alt="leaves1" id="leaves1thumb" onclick="ImageOff(); Image5On()">
+        <img src="images/leaves2.png" alt="leaves2" id="leaves2thumb" onclick="ImageOff(); Image6On()">
+        <img src="images/leaves3.png" alt="leaves3" id="leaves3thumb" onclick="ImageOff(); Image7On()">
+		<img src="images/sky2.png" alt="sky2" id="sky2thumb" onclick="ImageOff(); Image8On()">
+     
    
     </div>
 	</div>
