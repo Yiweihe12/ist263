@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>My Work</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+	<style>
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            color:#515c4e;
+        }
+        #slideshow-container {
+  			width: 1200px;
+            margin: auto; /* margin auto is centering this container */        
+        }
+        #bigimages {margin:10px 20px 30px 40px;}
+		#landscape3, #landscape4 {
+			width: 79%;
+		}
+		
+        #worktype {padding: 100px;}
+		#worktype h1{
+			font-size: 3em;
+			font-family: 'Ubuntu', sans-serif;
+
+		}
+        #thumbnails {width: 80%; margin: auto; padding-top: 20px;display: block;} 
+        /* ^^ margin auto is centering this container */
+      	#landscape1thumb, #landscape2thumb, #landscape3thumb, #landscape4thumb
+        {width:20%;}
+		
+		
+		#landscape1, #landscape2,#landscape3, #landscape3, #landscape4 {display:none;}
+
+		#landscape1info,#landscape2info,#landscape3info,#landscape4info {display:none;}
+		
+		#bigimages {float:left;}
+		.clear{clear:both;}
+	</style>
+	
+    <script>
+		function ImageOff (){
+			document.getElementById('landscape1').style.display= 'none';
+			
+			document.getElementById('landscape2').style.display= 'none';
+	
+			document.getElementById('landscape3').style.display= 'none';
+	
+			document.getElementById('landscape4').style.display= 'none';
+	
+	
+			document.getElementById('landscape1info').style.display= 'none';
+	
+			document.getElementById('landscape2info').style.display= 'none';
+	
+			document.getElementById('landscape3info').style.display= 'none';
+	
+			document.getElementById('landscape4info').style.display= 'none';
+	
+		}
+           
+        function Image1On(){
+			document.getElementById('landscape1').style.display='block';
+			document.getElementById('landscape1info').style.display='block';
+		}
+		function Image2On(){
+			document.getElementById('landscape2').style.display='block';
+			document.getElementById('landscape2info').style.display='block';
+		}
+		function Image3On(){
+			document.getElementById('landscape3').style.display='block';
+			document.getElementById('landscape3info').style.display='block';
+		}
+		function Image4On(){
+			document.getElementById('landscape4').style.display='block';
+			document.getElementById('landscape4info').style.display='block';
+
+       
+    </script>
+</head>
+	
+
+<body>
+	<nav>
+		<a id="skip-to-content" href="#content">Skip to Content</a>	
+		<a href="index.html">Home</a>
+		<span class="pie">|</span>
+		<a href="Skills.html">Skills</a>
+		<span class="pie">|</span>
+		<a href="Contact.html">Contact</a>
+		<span class="pie">|</span>
+		<a href="Mywork.html">My Work</a>
+	</nav>
+<div id="slideshow-container">
+    <div id="bigimages">
+        <img src="images/landscape1.png" alt="landscape1" id="landscape1">
+        <img src="images/landscape2.png" alt="landscape2" id="landscape2">
+        <img src="images/landscape3.png" alt="landscape3" id="landscape3">
+        <img src="images/landscape4.png" alt="landscape4" id="landscape4">
+    </div>
+    <div id="worktype"> 
+		<h1>Artwork Slideshow</h1>
+	
+        <div id="landscape1info">
+            <h2>Photography</h2>
+        </div>
+		
+        <div id="landscape2info">
+            <h2>Photography</h2>
+        </div>
+		
+        <div id="landscape3info">
+			<h2>Photography</h2>
+        </div>
+		
+        <div id="landscape4info">
+			<h2>Photography</h2>
+        </div>
+	
+		
+	</div>
+	<div class="clear"></div>
+    <div id="thumbnails">
+        <img src="images/landscape1.png" alt="landscape1" id="landscape1thumb" onclick="ImageOff(); Image1On()">
+        <img src="images/landscape2.png" alt="landscape2" id="landscape2thumb" onclick="ImageOff(); Image2On();">
+        <img src="images/landscape3.png" alt="landscape3" id="landscape3thumb" onclick="ImageOff(); Image3On();">
+        <img src="images/landscape4.png" alt="landscape4" id="landscape4thumb" onclick="ImageOff(); Image4On();">
+   
+    </div>
+	</div>
+	
+
+
+
+</body>
+</html>

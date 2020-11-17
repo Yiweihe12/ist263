@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+@media only screen and (max-width:600px) 
+{ 
+	body nav a {
+		width: 100%;
+		display:block;
+		margin: 5px;
+		padding: 10px 5px 10px 5px;
+		font-size: 1.2em;
+}
+	.pie {
+		display:none;
+	}
+
+}
+
+
+main h1, h2, h3{
+	font-family:'Ubuntu', sans-serif;
+}	
+
+body {
+  font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+}
+.evenrow{background-color: aliceblue;}
+table, th, td {
+  	border: 1px solid #B1B1B1;
+	border-collapse: collapse;
+}
+h1 {font-face: 3.5em;}
+h2 {font-face: 2.7em;
+}
+
+nav{
+	background-color:#F0F7F4;
+	}
+nav a 
+{color:#515c4e;
+}
+nav a:hover {
+	background-color:#d9e4dd;
+}
+nav{margin-bottom:30px;
+	padding:10px;}
+
+h1,h2,h3{color:#343E3D;}
+p,form,table,th,td,textarea,input,ul,label,option{color:#46494C;}
+
+a:link {color:#515c4e;}
+
+.quotation {float:right; margin-top: 5px;}
+.copywrite {float:left; margin-top: 5px;}
+.bioimg {float:left;width:230px; margin:0px 20px 0px 10px;}
+
+.mianinfo p {float:left;margin:5px 10px 5px 10px;}
+h2, h3{margin:0px 0px 0px 10px;}
+h2+p{margin: 10px;}
+.mianinfo {padding: 20px; background-color: #ffffff; border-radius: 1em; margin:10px;}
+
+body {background-color:#d9e4dd;}
+.h1p{margin:0.5em;}
+main {margin:0.5em;}
+div.clear{clear:both;}
+
+.container{
+	display: flex;
+	flex-wrap:wrap;
+  	justify-content: center;
+	align-items:center;
+	padding:10px 40px 10px 30px;
+	margin: 10px;
+	background-color:#ffffff; 
+	border-radius: 1em; 
+}
+	
+.map {
+	flex:1;
+	order:2;
+	flex-wrap:wrap;
+}
+
+.box2 {
+	flex:1; 
+	order:1; 
+	padding-right: 10px; 
+	margin: 10px -40px 10px 10px; 
+	flex-wrap:wrap;
+}
+
+.formbt{
+	background-color:#d9e4dd; 
+	border:none;
+	color:#515c4e;
+	padding: 15px 32px;
+	text-align:center;
+	dispaly: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	width: 83%;
+	border-radius: 0.5em;
+	
+	
+}
+
+#fname{
+	width: 83%; 
+	height: 30px;
+	border:none;
+	background-color:#d9e4dd;
+	font-size: 1.2em; 
+	border-bottom: 2px solid #515c4e;
+}
+#identity{
+	width: 84%;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 1.2em; 
+	height: 45px;
+	border:none;
+	background-color:#d9e4dd;
+	color:#515c4e;
+	padding: 10px;
+	align-content: center;
+	border-bottom: 2px solid #515c4e;
+}
+#textarea{
+	display: block;
+	width: 80%; 
+	height: 150px;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; 
+	font-size: 1em; 
+	border:none;
+	background-color:#d9e4dd;
+	color: #515c4e;
+	padding:15px;
+} 
+fieldset{
+	border:0;
+}
+legend{
+	font-size: 1em;
+	padding: 0px;
+}
+.bioimg {
+	max-width:100%;
+}
+
+
+#skip-to-content{
+	position:absolute; 
+	left:-999px;
+	background-color:#F0F7F4;
+}
+#skip-to-content:focus{
+	position:absolute; 
+	left:10px;
+}
+
+
