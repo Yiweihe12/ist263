@@ -5,12 +5,10 @@
 	<meta charset="UTF-8">
 	<title>My Work</title>
 	<link rel="stylesheet" href="styles.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<style>
 		body {
-            color:#515c4e;
+            color:#46494C;
         }
         #slideshow-container {
   			width: 1200px;
@@ -25,25 +23,34 @@
 		
 		#bigimages { 
 			flex: 1;
-     	margin-top: 20px;
+     		margin-top: 20px;
 			width:60%;
-		}
-		#landscape3, #landscape4{
-			width: 100px;
 		}
         #worktype {padding: 200px 200px 200px 350px;
 			vertical-align: middle;
 			flex: 2;
 		}
+		#worktype h2, p{font-family:"ubuntu";color:#46494C; font-style: italic;
+			
+		}
 		#worktype h1{
 			font-size: 2.5em;
-			font-family: 'Ubuntu', sans-serif;
+			font-family:"ubuntu";
+			
+			margin-top: -1em;
+			color:#46494C;
 
 		}
-        #thumbnails {width: 140px; margin: auto; padding-top: 20px;} 
+		.intro{
+			font-size: 1.2em;
+			font-family:"ubuntu";
+			 font-style: italic;
+		}
+		#landscape3,#landscape4{ width:1000px;}
+        #thumbnails{width:840px ; margin: auto; padding-top: 20px;} 
         /* ^^ margin auto is centering this container */
-      	#landscape1thumb, #landscape2thumb, #landscape3thumb, #landscape4thumb, #leaves1thumb,#leaves2thumb, #leaves3thumb, #sky2thumb, 
-        {width:100px;}
+      	#landscape1thumb, #landscape2thumb, #landscape3thumb, #landscape4thumb, #leaves1thumb,#leaves2thumb, #leaves3thumb, #sky2thumb
+        {width:20%; height:20%; }
 		
 		
 		#landscape2,#landscape3, #landscape3, #landscape4, #leaves1,#leaves2,#leaves3, #sky2 {display:none;}
@@ -52,6 +59,22 @@
 		
 		#bigimages {float:left;}
 		.clear{clear:both;}
+		
+@media only screen and (max-width:600px) 
+{ 
+	.flexcontainer{
+		flex-direction: column;
+		
+	}
+	
+	#bigimages{
+		width:400px;
+		
+	}
+	#worktype{
+		 text-align: center;
+	}
+		}
 	</style>
 	
     <script>
@@ -159,43 +182,51 @@
 	
         <div id="landscape1info">
             <h2>Photography</h2>
-			<p>Location: White Mountain <br>Date: October 18th, 2020</p>
+			<div class="intro">Leaves, River</div>
+			<p>Location: White Mountain <br>Date: October 18th, 2020 </p>
 
         </div>
 		
         <div id="landscape2info">
             <h2>Photography</h2>
+			<div class="intro">Leaves, River</div>
 			<p>Location: White Mountain <br>Date: October 18th, 2020</p>
         </div>
 		
         <div id="landscape3info">
 			<h2>Photography</h2>
+			<div class="intro">River</div>
 			<p>Location: White Mountain <br>Date: October 18th, 2020</p>
         </div>
 		
         <div id="landscape4info">
 			<h2>Photography</h2>
+			<div class="intro">Wooden walkway</div>
 			<p>Location: White Mountain <br>Date: October 18th, 2020</p>
         </div>
 		
 		<div id="leaves1info">
             <h2>Photography</h2>
+			<div class="intro">Autumn, Leaves</div>
 			<p>Location: White Mountain <br>Date: October 18th, 2020</p>
 
         </div>
 		
         <div id="leaves2info">
             <h2>Photography</h2>
+			<div class="intro">woods</div>
 			<p>Location: White Mountain <br>Date: October 18th, 2020</p>
         </div>
 		
         <div id="leaves3info">
 			<h2>Photography</h2>
-			<p>Location: White Mountain <br>Date: October 18th, 2020</p>
+			<div class="intro">eaves</div>
+			<p>lLocation: White Mountain <br>Date: October 18th, 2020</p>
         </div>
 		
 		<div id="sky2info">
 			<h2>Photography</h2>
+			<div class="intro">Night and Sky</div>
 			<p>Location: White Mountain <br>Date: October 18th, 2020</p>
         </div>
 		
