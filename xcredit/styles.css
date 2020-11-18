@@ -22,13 +22,23 @@
 	
 	#landscape1, #landscape2, #landscape3, #landscape4, #leaves1, #leaves2, #leaves3, #sky2{
 		max-width: 450px;
-		margin-left: -15em;
+		margin: auto;
 		
 		
 	}
+	#worktype{
+		padding:0px;
+		text-align: center;
+		position: relative;
+	
+		
+	}
+/*
+	
 	#landscape2info,#landscape3info,#landscape4info,#leaves1info,#leaves2info,#leaves3info,#sky2info {
-		max-width: 450px;
+
 	}
+*/
 }
 
 

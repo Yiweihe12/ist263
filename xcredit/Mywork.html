@@ -30,22 +30,68 @@
 			vertical-align: middle;
 			flex: 2;
 		}
-		#worktype h2, p{font-family:"ubuntu";color:#46494C; font-style: italic;
+		#worktype h2, p, .intro{font-family:"ubuntu";color:#46494C; font-style: italic;
+			position: relative;
+			animation: content;
+			animation-duration:2s;
+			animation-fill-mode: forwards;
+			
+		}
+		@keyframes content {
+			0% {right:-100px;}
+			100% {right:0;}
 			
 		}
 		#worktype h1{
 			font-size: 2.5em;
 			font-family:"ubuntu";
-			
 			margin-top: -1em;
 			color:#46494C;
+			position: relative;
+			animation:heading;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
 
 		}
+		@keyframes heading {
+			0% {top:-80px;}
+			100% {top:10px;}
+			
+		}
+		
+		
 		.intro{
 			font-size: 1.2em;
 			font-family:"ubuntu";
 			 font-style: italic;
 		}
+		
+		.btn{
+			display:inline-block;
+			color: #46494C;
+			font-weight:-500;
+			font-size: 1.5em;
+			text-decoration: none;
+			padding:1rem 2rem;
+			border:#46494C 2px solid;
+			border-radius:1em; 
+			margin-top: 40px;
+			opacity:0;
+			animation-name:btn;
+			animation-duration: 6s;
+			animation-dely:4s;
+			animation-fill-mode: forwards;
+/*
+			transition-property: transform;
+			transition-duration: 1s;
+*/
+		}
+		@keyframes btn{
+			0% {opacity: 0}
+			100%{opacity: 1}
+			
+		}
+		
 		#landscape3,#landscape4{ width:1000px;}
         #thumbnails{width:840px ; margin: auto; padding-top: 20px;} 
         /* ^^ margin auto is centering this container */
@@ -60,21 +106,7 @@
 		#bigimages {float:left;}
 		.clear{clear:both;}
 		
-@media only screen and (max-width:600px) 
-{ 
-	.flexcontainer{
-		flex-direction: column;
-		
-	}
-	
-	#bigimages{
-		width:400px;
-		
-	}
-	#worktype{
-		 text-align: center;
-	}
-		}
+
 	</style>
 	
     <script>
@@ -214,14 +246,14 @@
 		
         <div id="leaves2info">
             <h2>Photography</h2>
-			<div class="intro">woods</div>
+			<div class="intro">Woods</div>
 			<p>Location: White Mountain <br>Date: October 18th, 2020</p>
         </div>
 		
         <div id="leaves3info">
 			<h2>Photography</h2>
-			<div class="intro">eaves</div>
-			<p>lLocation: White Mountain <br>Date: October 18th, 2020</p>
+			<div class="intro">Leaves</div>
+			<p>Location: White Mountain <br>Date: October 18th, 2020</p>
         </div>
 		
 		<div id="sky2info">
@@ -229,6 +261,7 @@
 			<div class="intro">Night and Sky</div>
 			<p>Location: White Mountain <br>Date: October 18th, 2020</p>
         </div>
+	<a href="#" class="btn">NEXT</a>
 		
 		
 	</div>
