@@ -63,7 +63,8 @@ nav{
 	}
 nav a 
 {color:#515c4e;
-}
+	transition:all 0.2s ease-in-out;}
+
 nav a:hover {
 	background-color:#d9e4dd;
 }
