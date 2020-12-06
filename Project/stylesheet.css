@@ -4,17 +4,15 @@
 @media screen and  (max-width: 768px){
 	
 		.naviga{
-		width:100%;
-		display:block;
-		font-size: 1.2em;
+		mx-width:100%;
+/*		display:block;*/
 		margin: 5px;
-		padding: 10px 5px 10px 5px;
+		padding: 10px;
 		
 	
 }
-	.pie{
-		display: none;
-	}
+	
+
 	.ct1, .ct2, .ct3, .ct4{
 		flex-direction: column;
 	}
@@ -81,16 +79,22 @@
 		
 }
 
-.naviga a, .pie{
+.naviga a{
 	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
-	font-size: 1em;
 	max-width:100%;
 	float:left;
 	text-decoration:none;
 	text-align: left;
 	color: black;
 	margin: 2em;
+	font-size: 1.2em;
+	
+	
 
+}
+.naviga{
+	padding-bottom: 75px;
+	transition: all 0.3s linear;
 }
 
 
@@ -153,12 +157,36 @@ ul li:hover a {
 /*	vertical-align: middle;*/
 	
 }
+.container1 h1{
+	position: relative;
+			animation: head;
+			animation-duration:2s;
+			animation-fill-mode: forwards;
+	
+}
+@keyframes head {
+			0% {top:-100px;}
+			100% {top:5px;}
+		}
+		
 .container1 p{
 /*	align: center;*/
 	font-size: 1.2em;
 	
 }
+.ctext{
+		position: relative;
+		animation: content;
+		animation-duration:2s;
+		animation-fill-mode: forwards;
+			
+		}
 
+@keyframes content {
+			0% {right:-100px;}
+			100% {right:0;}
+			
+		}
 .textcenter {
 	text-align: center;
 	align-content: center;
@@ -219,9 +247,24 @@ ul li:hover a {
 	padding:0.8rem 1.3rem;
 	border:#75869A 3px solid;
 	border-radius:1em; 
+	opacity:0;
+	animation-name:Contact_Us;
+	animation-duration: 5s;
+	animation-dely:4s;
+	animation-fill-mode: forwards;
   
 }
 	
+#Contact_Us:hover{
+			color:#75869A;
+			border:#75869A 2px solid;
+		}
+
+@keyframes Contact_Us{
+			0% {opacity: 0}
+			100%{opacity: 1}
+			
+		}
 body {font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 }
 
@@ -425,15 +468,15 @@ ul {
 
 label span { color: white; }
 
+
 .container2 .homepic{
   text-align: center;
   color: white;
 }
 
 .top-left{
-margin-left: 20px;
+	margin-left: 20px;
 	color:#646069;
-	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 	font-weight: bold;
 	font-size: 1em;
 	
@@ -442,6 +485,7 @@ margin-left: 20px;
 	position: relative;
 	margin-bottom: 0.1em;
 }
+
 .homepic{
 	display: block;
 	width: 60%;
