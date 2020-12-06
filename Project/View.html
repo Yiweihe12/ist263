@@ -6,6 +6,7 @@
 <title>View</title>
 <link rel="stylesheet" href="stylesheet.css">
 <link rel="shortcut icon" type="image/x-icon" href="myfavicon.ico">
+	<script src="script.js"></script>
 </head>
 	<style>
 	
@@ -25,6 +26,7 @@
 		padding:10px; 20px;
 }
 	nav ul li a {
+		font-weight: bold;
 		text-decoration: none;
 		font-size:18px;
 		color:black;
@@ -80,7 +82,12 @@
 					<li>Half floor: living room, piano, next to the indoor swimming pool.</li>
 					<li>Second floor: two guest rooms, two large main host rooms, a living room cloakroom, and sports equipment.</li>
 				</ul>
+				
 				<p style="color:#646069;">There will be a great and visual enjoyable digital plan for each floor so that you can view it much better and have an idea in mind how great our house is.</p>
+		
+					<button onclick="revealMessage()" class="button1">Read more</button>
+					<p id="hiddenMessage" style="display:none;">Thank you for getting to know this house, and there are so much to learn about for the housing, and here is the story behind it.</p>
+				
 				</div>
 				</div>
 				<div class="image02">
