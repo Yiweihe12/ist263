@@ -8,13 +8,57 @@
 	<link rel="shortcut icon" type="image/x-icon" href="myfavicon.ico">
 </head>
 	
+	<style>
+	
+		nav{
+/*		background-color:#75869A;*/
+		margin: 0px 30px;
+		font-size: 1.8em;
+	}
+	nav ul{
+		padding: 10px;
+		display: flex;
+		justify-content:center;
+		list-style:none;
+	
+}
+	nav ul li{
+		padding:10px; 20px;
+}
+	nav ul li a {
+		font-weight: 200
+		text-decoration: none;
+		font-size:18px;
+		color:black;
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	}
+	ul li:hover a {
+	text-decoration-line: underline;
+}
+	
+	@media only screen and (max-width:767px){
+		nav ul{
+			height:230px;
+			flex-direction: column;
+			text-align:center;
+			text-decoration-line: underline;
+			letter-spacing: 0.05em;
+		}
+	}
+	
+	
+</style>
+	
 <body id="ctbody">
-	<nav class="naviga">
-	  <a id="skip-to-content" href="#content">Skip to Content</a>
-        <a href="index.html">HOME &#38; ABOUT</a>
-        <a href="View.html">VIEW</a>
-        <a href="Contact.html">CONTACT</a>
+		<nav>
+		<ul>
+			<li><a id="skip-to-content" href="#content">Skip to Content</a></li>
+            <li><a href="index.html">HOME &#38; ABOUT</a></li>
+            <li><a href="View.html">VIEW</a></li>
+       		<li><a href="Contact.html">CONTACT</a></li>
+      </ul>
     </nav>
+	
 	
 	<section class="ctsection">
 	
