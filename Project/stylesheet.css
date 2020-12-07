@@ -590,6 +590,15 @@ h1.homeheader{
 	100%{top:4.5em}
 }
 
+@keyframes opchange{
+	0%{opacity: 1}
+	100%{opacity:0}
+}
+
+.opc{
+	animation-name: opchange;
+ 	animation-duration: 0.75s;
+}
 
 .introo{
 	background:black;
